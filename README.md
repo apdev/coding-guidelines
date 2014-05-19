@@ -72,8 +72,27 @@ if (isValidPassword) {
 }
 ```
 
-- use slashes (`//`) for both single line and multi line comments. Try to write comments that explain higher level mechanisms or clarify difficult segments of your code. Don't use comments to restate trivial things.
+- use slashes `//` for both single line and multi line comments. Try to write comments that explain higher level mechanisms or clarify difficult segments of your code. Don't use comments to restate trivial things.
 
+### RequireJS
+
+- wherever possible use [RequireJS](http://requirejs.org/) to modularise your code
+- use modules in [CommonJS-style](http://requirejs.org/docs/api.html#cjsmodule).
+
+```javascript
+// module using the simplified CommonJS wrapper
+define(function(require) {
+  var a = require("a"),
+    b = require("b");
+
+    // return the module value
+    return function () {};
+  }
+);
+```
+
+- use RequireJS' optimizer [r.js](http://requirejs.org/docs/optimization.html) to combine and minify multiple scripts
+- if you don't need to load modules at runtime, think about using [almond](https://github.com/jrburke/almond) as *a replacement AMD loader. It is a smaller "shim" loader, providing the minimal AMD API footprint that includes loader plugin support.*
 
 ## HTML & CSS
 
