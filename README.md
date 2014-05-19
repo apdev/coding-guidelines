@@ -119,4 +119,3 @@ if (isValidPassword) {
 - use pre-processors like (SASS or LESS) where possible
 - as a rule of thumb, don't nest further than 3 levels deep. If you find yourself going further, think about reorganizing your rules (either the specificity needed, or the layout of the nesting).
 - use separate files (concatenated by a build step) to help break up code for distinct components
-- 
