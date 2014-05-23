@@ -208,7 +208,7 @@ Everything else takes place inside the component or without impacting the previo
 }
 ```
 
-- **never use `!important`**
+- **"never" use `!important`** (sometimes if you work with external sources you just have to)
 - avoid qualifying ID and class names with type selectors (for [performance reasons](http://www.stevesouders.com/blog/2009/06/18/simplifying-css-selectors/))
 
 ```css
